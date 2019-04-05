@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Random Lotto Generator</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="node_modules/mdbootstrap/css/mdb.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="node_modules/mdbootstrap/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Start your project here-->
+<div class="container-fluid">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Lotto Generator</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">Random Numbers</a></li>
+                <li><a href="#contact">Frequent Random Numbers</a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </nav>
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <h1 class="h1-responsive">Random Frequent Numbers</h1>
+        <p class="lead">
+            Click the button to generate your lotto numbers!
+        </p>
+        <hr class="my-2">
+        <!--<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>-->
+        <p class="lead">
+            <a id="genLotNum" class="btn btn-primary btn-lg" role="button">Generate Numbers</a>
+        </p>
+        <h3 id="lottoHeader" class="hidden">Your lotto numbers are:</h3>
+        <div id="lottoNums"></div>
+        <h3 id="powerballHeader" class="hidden">And your PowerBall number is:</h3>
+        <div id="powerballNum"></div>
+    </div>
+    <!--/.Jumbotron-->
+</div>
+<!-- /Start your project here-->
+
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/jquery-2.2.3.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+</div><script type="text/javascript" src="js/lotto.js"></script>
+
+</body>
+
+</html>
