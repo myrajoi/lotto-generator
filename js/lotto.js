@@ -1,7 +1,7 @@
 var jwApp = {
     utils: {}
 };
-jwApp.utils.lotto = (function($) {
+jwApp.utils.lotto = (function() {
     'use strict';
 
     var powerballLotteryRandom;
@@ -37,9 +37,10 @@ jwApp.utils.lotto = (function($) {
     }
 
     function generateBoth(){
-        var lottoArray = [];
+        var lottoArray = [],
+        button = document.getElementById('genLotNum');
 
-        $('#genLotNum').on('click', function(){
+        button.addEventListener('click', function(){
             var powerballNum = document.getElementById('powerballNum');
             var lottoNums = document.getElementById('lottoNums');
 
@@ -102,5 +103,5 @@ jwApp.utils.lotto = (function($) {
         init: init
     }
 
-})(jQuery);
+})();
 $(jwApp.utils.lotto.init);
